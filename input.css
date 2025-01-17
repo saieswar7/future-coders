@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger{
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s linear;
+    position: relative;
+  }
+  
+  .hamburger-top, .hamburger-bottom, .hamburger-middle{
+      height: 2px;
+      width: 24px;
+      background-color: white;
+      position: absolute;
+      transition: all 0.5s linear;
+  }
+  .hamburger-top{
+  
+  }
+  .hamburger-bottom{
+    transform: translateY(7px);
+  }
+  .hamburger-middle{
+    transform: translateY(14px);
+    width: 16px;
+  }
+  
+  .open .hamburger-top{
+    transform: rotate(45deg) translateX(7px) translateY(7px);
+  }
+  .open .hamburger-middle{
+    display: none;
+  }
+  .open .hamburger-bottom{
+    transform: rotate(-45deg) translateX(-7px) translateY(7px);
+  }
