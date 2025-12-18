@@ -19,7 +19,7 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: saieswar7/future-coders
+        image: saieswar217/future-coders
         tags: sai_gadiapp_v1,latest
         registry: docker.io
         dockerfile: Dockerfile
